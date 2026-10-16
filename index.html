@@ -688,6 +688,22 @@
     transform: scale(1.08) rotate(-3deg);
   }
 
+  .product-media {
+    position: relative;
+    margin: 0;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #eef3f7;
+  }
+
+  .product-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
   .product-tag {
     position: absolute;
     top: 12px;
@@ -1618,25 +1634,10 @@
 
         <!-- Товар 1: Спиннинг -->
         <article class="product-card">
-          <div class="product-image">
+          <figure class="product-media">
             <span class="product-tag hot">Хит</span>
-            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <defs>
-                <linearGradient id="rod1" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0%" stop-color="#1f2937"/>
-                  <stop offset="100%" stop-color="#374151"/>
-                </linearGradient>
-              </defs>
-              <line x1="15" y1="130" x2="185" y2="25" stroke="url(#rod1)" stroke-width="5" stroke-linecap="round"/>
-              <circle cx="15" cy="130" r="10" fill="#0b3d5c"/>
-              <circle cx="15" cy="130" r="4" fill="#f59e0b"/>
-              <circle cx="60" cy="95" r="3" fill="#f59e0b"/>
-              <circle cx="100" cy="70" r="3" fill="#f59e0b"/>
-              <circle cx="140" cy="45" r="3" fill="#f59e0b"/>
-              <line x1="185" y1="25" x2="185" y2="60" stroke="#9ca3af" stroke-width="1"/>
-              <ellipse cx="185" cy="65" rx="4" ry="7" fill="#ef4444"/>
-            </svg>
-          </div>
+            <img src="assets/images/spinning.jpg" alt="Спиннинг ProCast Carbon" loading="lazy">
+          </figure>
           <div class="product-body">
             <span class="product-category">Спиннинги</span>
             <h3 class="product-title">Спиннинг ProCast Carbon 2.4 м</h3>
@@ -1650,22 +1651,10 @@
 
         <!-- Товар 2: Катушка -->
         <article class="product-card">
-          <div class="product-image">
+          <figure class="product-media">
             <span class="product-tag">Новинка</span>
-            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <circle cx="100" cy="75" r="55" fill="#1f2937" stroke="#0b3d5c" stroke-width="3"/>
-              <circle cx="100" cy="75" r="35" fill="#374151"/>
-              <circle cx="100" cy="75" r="12" fill="#f59e0b"/>
-              <g stroke="#9ca3af" stroke-width="1.5" fill="none">
-                <line x1="45" y1="75" x2="88" y2="75"/>
-                <line x1="112" y1="75" x2="155" y2="75"/>
-                <line x1="100" y1="20" x2="100" y2="63"/>
-                <line x1="100" y1="87" x2="100" y2="130"/>
-              </g>
-              <rect x="150" y="68" width="25" height="14" rx="3" fill="#f59e0b"/>
-              <circle cx="170" cy="75" r="4" fill="#1f2937"/>
-            </svg>
-          </div>
+            <img src="assets/images/reel.jpg" alt="Безынерционная катушка Fisher X3000" loading="lazy">
+          </figure>
           <div class="product-body">
             <span class="product-category">Катушки</span>
             <h3 class="product-title">Безынерционная катушка Fisher X3000</h3>
@@ -1705,27 +1694,10 @@
 
         <!-- Товар 4: Приманки -->
         <article class="product-card">
-          <div class="product-image">
+          <figure class="product-media">
             <span class="product-tag hot">−15%</span>
-            <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <g transform="translate(40 50)">
-                <ellipse cx="50" cy="25" rx="55" ry="18" fill="#f59e0b"/>
-                <path d="M95 25 L120 12 L115 25 L120 38 Z" fill="#f59e0b"/>
-                <circle cx="20" cy="22" r="3" fill="#0b3d5c"/>
-                <circle cx="21" cy="21" r="1" fill="#fff"/>
-                <g stroke="#0b3d5c" stroke-width="0.8" fill="none" opacity="0.4">
-                  <path d="M40 20 Q45 15 50 20"/>
-                  <path d="M55 22 Q60 17 65 22"/>
-                  <path d="M70 20 Q75 15 80 20"/>
-                </g>
-              </g>
-              <g transform="translate(55 85) scale(0.7)">
-                <ellipse cx="50" cy="25" rx="55" ry="18" fill="#0f766e"/>
-                <path d="M95 25 L120 12 L115 25 L120 38 Z" fill="#0f766e"/>
-                <circle cx="20" cy="22" r="3" fill="#0b3d5c"/>
-              </g>
-            </svg>
-          </div>
+            <img src="assets/images/lure.jpg" alt="Набор воблеров Улов" loading="lazy">
+          </figure>
           <div class="product-body">
             <span class="product-category">Приманки</span>
             <h3 class="product-title">Набор воблеров «Улов» 6 шт.</h3>
