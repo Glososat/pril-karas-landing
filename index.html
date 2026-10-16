@@ -643,6 +643,20 @@
     gap: 24px;
   }
 
+  /* Каталог: планшеты (640–1023px) — 2 колонки */
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .catalog-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Каталог: мобильные (< 640px) — 1 колонка */
+  @media (max-width: 639px) {
+    .catalog-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
   .product-card {
     background: #fff;
     border: 1px solid #e5e7eb;
@@ -1242,10 +1256,6 @@
       margin: 0 auto;
     }
 
-    .catalog-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
     .advantages-grid {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -1282,7 +1292,6 @@
       font-size: 24px;
     }
 
-    .catalog-grid,
     .advantages-grid {
       grid-template-columns: 1fr;
     }
